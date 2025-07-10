@@ -1,12 +1,12 @@
 import React from "react";
 import "./LoadingScreen.css";
-import nyanGif from './assets/nyan-cat.gif';
+
 
 const LoadingScreen = () => {
   return (
     <div className="loading-overlay">
       <img
-        src={nyanGif}
+        src={`${process.env.PUBLIC_URL}/nyan-cat.gif`}
         alt="Nyan Cat Loading .gif"
         className="nyan-cat"
         draggable="false"
